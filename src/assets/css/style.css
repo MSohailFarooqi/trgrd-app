@@ -1,0 +1,89 @@
+/* Gilroy Font Face */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+       url('../fonts/Gilroy-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Heavy.woff2') format('woff2'),
+       url('../fonts/Gilroy-Heavy.woff') format('woff');
+  font-weight: heavy;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+       url('../fonts/Gilroy-Medium.woff') format('woff');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+       url('../fonts/Gilroy-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
+       url('../fonts/Gilroy-Semibold.woff') format('woff');
+  font-weight: semibold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Thin.woff2') format('woff2'),
+       url('../fonts/Gilroy-Thin.woff') format('woff');
+  font-weight: thin;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Light.woff2') format('woff2'),
+       url('../fonts/Gilroy-Light.woff') format('woff');
+  font-weight: light;
+  font-style: normal;
+}
+body {
+  font-family: 'Gilroy', sans-serif;
+  background: var(--background);
+}
+:root {
+    --primary-color: #C58BD7;
+    --secondary-color: #1c1c1c;
+    --background: linear-gradient(180deg, rgba(16, 65, 68, 1) 0%, rgba(3, 23, 23, 1) 50%) !important;
+    --text-color: #fff;
+    --font-family: 'Gilroy', sans-serif;
+    --font-size: 16px;
+    --alt-section-bg: #072223;
+}
+.bg-alt-section {
+    background-color: var(--alt-section-bg);
+}
+.bg-primary {
+    background-color: var(--primary-color);
+}
+.text-primary {
+    color: var(--primary-color);
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+.container{
+    max-width: 1200px !important;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.bg-curve{
+    background-image: url("../images/subtract.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
