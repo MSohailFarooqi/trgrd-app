@@ -1,0 +1,42 @@
+export const testimonials = [
+    {
+        id: 1,
+        text: "“I didn’t realize how often I was emotionally reacting until I started tracking with trgrd. Now I pause, breathe, and reflect instead of spiraling.”",
+        name: "Aria M.",
+        age: 29,
+        profession: "Educator",
+        avatar: '/src/assets/images/avatar1.png',
+    },
+    {
+        id: 2,
+        text: "📖 “The reading section led me to an article that literally described my inner conflict word for word. I cried after journaling that day. In a good way.”",
+        name: "Nina K.",
+        age: 34,
+        profession: "Writer",
+        avatar: "/src/assets/images/avatar2.png",
+    },
+    {
+        id: 3,
+        text: "🌊 “At first I was skeptical, but after one month with trgrd, I started noticing my emotional patterns. It helped me name things I couldn’t before.”",
+        name: "Floyd Miles",
+        age: 42,
+        profession: "Businessman",
+        avatar: "/src/assets/images/avatar3.png",
+    },
+    {
+        id: 4,
+        text: "The daily check-ins became a ritual I look forward to. It's like having a therapist in my pocket, but better because it's always available.",
+        name: "Sarah Chen",
+        age: 28,
+        profession: "Designer",
+        avatar: "/src/assets/images/avatar1.png",
+    },
+    {
+        id: 5,
+        text: "I've tried many wellness apps, but this one actually helped me understand my emotional patterns. The insights are genuinely helpful.",
+        name: "Marcus Johnson",
+        age: 35,
+        profession: "Engineer",
+        avatar: "/src/assets/images/avatar2.png",
+    },
+];

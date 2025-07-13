@@ -2,7 +2,9 @@ function Features() {
   return (
     <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 text-center">
       <div className="mb-8 lg:mb-16">
-        <h1 className="text-3xl font-bold text-center">Key Features</h1>
+        <h1 className="text-3xl font-bold text-center heading-sp">
+          Key Features
+        </h1>
       </div>
       <div className="flex flex-wrap justify-center">
         <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-15">

@@ -7,13 +7,13 @@ function TermsConditions() {
         <h2 className="text-2xl font-bold mb-2">1. Acceptance of Terms</h2>
         <p className="leading-relaxed">
           By accessing or using the My Trgrd mobile application or website ("the
-          Service"), you agree to be bound by these Terms and our{" "}
+          Service"), you agree to be bound by these Terms and our
           <Link
-            to="/privacy-policy"
-            className="underline text-blue-400 cursor-pointer"
+            to="/privacy"
+            className="underline text-blue-400 cursor-pointer px-1"
           >
             Privacy Policy.
-          </Link>{" "}
+          </Link>
           If you do not agree to these Terms, do not use our services.
         </p>
       </section>
