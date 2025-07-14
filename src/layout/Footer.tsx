@@ -1,4 +1,3 @@
-import Nav from "./Nav";
 import logo from "../assets/images/logo.svg";
 import { Link } from "react-router-dom";
 import google from "../assets/images/google.svg";
@@ -23,7 +22,7 @@ function Footer() {
               <p className="text-white mt-2">Your triggers hold your truth.</p>
             </div>
             <div className="basis-3/4 text-center md:text-end">
-              <Nav />
+              {/* <NavFooter /> */}
             </div>
           </div>
         </div>
