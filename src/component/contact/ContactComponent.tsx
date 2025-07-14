@@ -1,11 +1,51 @@
 import { Link } from "react-router-dom";
 import ContactImage from "../../assets/images/contact-img.png";
-function ContactComponent() {
+import { useRef } from "react";
+import emailjs from "emailjs-com";
+const ContactComponent = () => {
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_94o2ki7", // e.g., service_kf5xxx
+        "template_59p5syy", // e.g., template_4gxxx
+        form.current!,
+        "-jss9rwvbk5vPnfzp" // e.g., aHxx8Ygxxxxx
+      )
+      .then(
+        (result) => {
+          console.log("Email sent:", result.text);
+          alert("✅ Message sent successfully!");
+          form.current?.reset();
+        },
+        (error) => {
+          console.error("Email error:", error.text);
+          alert("❌ Failed to send message. Please try again.");
+        }
+      );
+  };
   return (
     <>
-      <div className="flex flex-col md:flex-row items-center justify-between gap-8 mt-20">
-        {/* Form Section */}
-        <form className="w-full md:w-1/2 space-y-4">
+      <div
+        className="flex flex-col md:flex-row items-center justify-between gap-8 mt-20"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
+        <form
+          className="w-full md:w-1/2 space-y-4"
+          ref={form}
+          onSubmit={sendEmail}
+        >
+          <input
+            type="hidden"
+            name="user_email"
+            value="salmanbhatti52@hotmail.com"
+          />
           <div className="flex items-center border border-gray-500 px-4 py-3 mb-5 bg-black rounded-md">
             <span className="mr-2 text-gray-400">
               <svg
@@ -27,6 +67,7 @@ function ContactComponent() {
             <input
               type="email"
               placeholder="Email"
+              name="email"
               className="bg-transparent w-full outline-none placeholder-gray-400 text-sm"
             />
           </div>
@@ -50,6 +91,7 @@ function ContactComponent() {
             <input
               type="text"
               placeholder="Name"
+              name="user_name"
               className="bg-transparent w-full outline-none placeholder-gray-400 text-sm"
             />
           </div>
@@ -76,6 +118,7 @@ function ContactComponent() {
             </span>
             <input
               type="text"
+              name="subject"
               placeholder="Subject"
               className="bg-transparent w-full outline-none placeholder-gray-400 text-sm"
             />
@@ -85,19 +128,19 @@ function ContactComponent() {
             <textarea
               placeholder="Message"
               rows={5}
+              name="message"
               className="bg-transparent w-full outline-none placeholder-gray-400 text-sm resize-none"
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="w-full py-2 bg-primary text-black font-semibold rounded-md transition hover:opacity-90"
+            className="w-full py-2 bg-primary text-black font-semibold rounded-md cursor-pointer hover:scale-105 transition-transform duration-200"
           >
             SAVE
           </button>
         </form>
 
-        {/* Illustration Image */}
         <div className="w-full md:w-1/2 text-center">
           <img
             src={ContactImage}
@@ -107,7 +150,6 @@ function ContactComponent() {
         </div>
       </div>
 
-      {/* Direct Email Section */}
       <div className="text-center mt-20">
         <h3 className="text-xl font-semibold mb-2">Direct Email</h3>
         <p>
@@ -121,6 +163,6 @@ function ContactComponent() {
       </div>
     </>
   );
-}
+};
 
 export default ContactComponent;

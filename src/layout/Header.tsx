@@ -1,16 +1,19 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/logo.svg"; // replace with your path
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <header>
       <div className="navbar md:px-20 px-5 py-3 flex items-center justify-between">
         {/* Left: Logo */}
         <div className="flex items-center">
-          <Link to="/" className="text-2xl font-bold text-purple-300">
+          <Link to="/" className="text-2xl font-bold">
             <img src={logo} alt="Logo" className="h-10" />
           </Link>
         </div>
@@ -47,27 +50,52 @@ const Header = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 items-center text-sm">
           <li>
-            <Link to="/" className="hover:text-purple-300">
+            <Link
+              to="/"
+              className={`hover:text-purple-300 transition-colors duration-300 ${
+                isActive("/") ? "font-bold" : ""
+              }`}
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link to="/whats-new" className="hover:text-purple-300">
+            <Link
+              to="/whats-new"
+              className={`hover:text-purple-300 transition-colors duration-300 ${
+                isActive("/whats-new") ? "font-bold" : ""
+              }`}
+            >
               What's New
             </Link>
           </li>
           <li>
-            <Link to="/terms" className="hover:text-purple-300">
+            <Link
+              to="/terms"
+              className={`hover:text-purple-300 transition-colors duration-300 ${
+                isActive("/terms") ? "font-bold" : ""
+              }`}
+            >
               Terms & Conditions
             </Link>
           </li>
           <li>
-            <Link to="/privacy" className="hover:text-purple-300">
+            <Link
+              to="/privacy"
+              className={`hover:text-purple-300 transition-colors duration-300 ${
+                isActive("/privacy") ? "font-bold" : ""
+              }`}
+            >
               Privacy Policy
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="hover:text-purple-300">
+            <Link
+              to="/contact"
+              className={`hover:text-purple-300 transition-colors duration-300 ${
+                isActive("/contact") ? "font-bold" : ""
+              }`}
+            >
               Contact Us
             </Link>
           </li>
@@ -76,29 +104,49 @@ const Header = () => {
 
       {/* Mobile Dropdown */}
       {menuOpen && (
-        <ul className="md:hidden p-5 space-y-2 bg-[#063133] text-sm">
+        <ul className="md:hidden px-5 pb-4 space-y-2 bg-[#063133] text-sm">
           <li>
-            <Link to="/" onClick={() => setMenuOpen(false)}>
+            <Link
+              to="/"
+              onClick={() => setMenuOpen(false)}
+              className={`${isActive("/") ? "font-bold" : ""}`}
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link to="/whats-new" onClick={() => setMenuOpen(false)}>
+            <Link
+              to="/whats-new"
+              onClick={() => setMenuOpen(false)}
+              className={`${isActive("/whats-new") ? "font-bold" : ""}`}
+            >
               What's New
             </Link>
           </li>
           <li>
-            <Link to="/terms" onClick={() => setMenuOpen(false)}>
+            <Link
+              to="/terms"
+              onClick={() => setMenuOpen(false)}
+              className={`${isActive("/terms") ? "font-bold" : ""}`}
+            >
               Terms & Conditions
             </Link>
           </li>
           <li>
-            <Link to="/privacy" onClick={() => setMenuOpen(false)}>
+            <Link
+              to="/privacy"
+              onClick={() => setMenuOpen(false)}
+              className={`${isActive("/privacy") ? "font-bold" : ""}`}
+            >
               Privacy Policy
             </Link>
           </li>
           <li>
-            <Link to="/contact" onClick={() => setMenuOpen(false)}>
+            <Link
+              to="/contact"
+              onClick={() => setMenuOpen(false)}
+              className={`${isActive("/contact") ? "font-bold" : ""}`}
+            >
               Contact Us
             </Link>
           </li>

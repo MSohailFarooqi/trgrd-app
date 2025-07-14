@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 function TermsConditions() {
   return (
     <>
-      <section>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
         <h2 className="text-2xl font-bold mb-2">1. Acceptance of Terms</h2>
         <p className="leading-relaxed">
           By accessing or using the My Trgrd mobile application or website ("the
@@ -18,7 +23,12 @@ function TermsConditions() {
         </p>
       </section>
 
-      <section>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="250"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
         <h2 className="text-2xl font-bold mb-2">
           2. Description of the Service
         </h2>
@@ -39,7 +49,12 @@ function TermsConditions() {
         </p>
       </section>
 
-      <section>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
         <h2 className="text-2xl font-bold mb-2">3. User Eligibility</h2>
         <p className="leading-relaxed">To use the Service, you must:</p>
         <ul className="list-disc list-inside space-y-1 mt-2 ms-4">
@@ -54,7 +69,12 @@ function TermsConditions() {
         </ul>
       </section>
 
-      <section>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
         <h2 className="text-2xl font-bold mb-2">4. User Accounts</h2>
         <p className="leading-relaxed">When you create an account with us:</p>
         <ul className="list-disc list-inside space-y-1 mt-2 ms-4">
@@ -70,7 +90,12 @@ function TermsConditions() {
         </ul>
       </section>
 
-      <section>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
         <h2 className="text-2xl font-bold mb-2">5. Intellectual Property</h2>
         <p className="leading-relaxed">
           All content, features, and functionality, including but not limited
@@ -95,7 +120,12 @@ function TermsConditions() {
         </ul>
       </section>
 
-      <section>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
         <h2 className="text-2xl font-bold mb-2">6. User-Generated Content</h2>
         <p className="leading-relaxed">
           When you create and name a FlyBox or submit information:
@@ -117,7 +147,12 @@ function TermsConditions() {
         </p>
       </section>
 
-      <section>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
         <h2 className="text-2xl font-bold mb-2">7. Orders and Payments</h2>
         <ul className="list-disc list-inside space-y-1 mt-2 ms-4">
           <li>Prices and availability of flies are subject to change</li>

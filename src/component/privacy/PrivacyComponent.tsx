@@ -2,7 +2,12 @@ function PrivacyComponent() {
   return (
     <>
       {/* 1. Information We Collect */}
-      <section>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
         <h2 className="text-2xl font-bold mb-2">1. Information We Collect</h2>
 
         <h3 className="font-semibold mt-2">a) Personal Information</h3>

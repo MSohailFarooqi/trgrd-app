@@ -4,6 +4,7 @@ import google from "../assets/images/google.svg";
 import twitter from "../assets/images/devicon_twitter.svg";
 import instgrm from "../assets/images/instagram.svg";
 import linkedn from "../assets/images/linkedin.svg";
+import Nav from "./Nav";
 
 function Footer() {
   return (
@@ -22,7 +23,7 @@ function Footer() {
               <p className="text-white mt-2">Your triggers hold your truth.</p>
             </div>
             <div className="basis-3/4 text-center md:text-end">
-              {/* <NavFooter /> */}
+              <Nav />
             </div>
           </div>
         </div>
