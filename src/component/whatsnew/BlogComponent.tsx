@@ -48,16 +48,21 @@ function WhatsNewComponent() {
               </h3>
 
               {/* Description */}
-              <p className="leading-relaxed mb-6">{item.description}</p>
+              <p className="leading-relaxed mb-6 text-white">
+                {item.description}
+              </p>
 
               {/* Features List */}
               <div className="space-y-2">
-                <h4 className="text-xl font-bold mb-3">
+                <h4 className="text-xl font-bold mb-3 text-white">
                   {item.isNew ? "🔧 Bug Fixes" : "🔧 Fixes & Tweaks:"}
                 </h4>
                 <ul className="space-y-2">
                   {item.features.map((feature, index) => (
-                    <li key={index} className=" flex items-center gap-2">
+                    <li
+                      key={index}
+                      className=" flex items-center gap-2 text-gray-200"
+                    >
                       <span className="text-2xl">•</span>
                       <span>{feature}</span>
                     </li>

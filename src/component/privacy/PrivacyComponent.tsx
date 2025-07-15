@@ -8,10 +8,14 @@ function PrivacyComponent() {
         data-aos-offset="100"
         data-aos-duration="1500"
       >
-        <h2 className="text-2xl font-bold mb-2">1. Information We Collect</h2>
+        <h2 className="text-2xl font-bold mb-2 text-white">
+          1. Information We Collect
+        </h2>
 
-        <h3 className="font-semibold mt-2">a) Personal Information</h3>
-        <ul className="list-disc list-inside space-y-1 mt-2 ms-4">
+        <h3 className="font-semibold mt-2 text-white">
+          a) Personal Information
+        </h3>
+        <ul className="list-disc list-inside space-y-1 mt-2 ms-4 text-white">
           <li>Full name</li>
           <li>Email address</li>
           <li>Profile image (if uploaded)</li>
@@ -20,7 +24,7 @@ function PrivacyComponent() {
         </ul>
 
         <h3 className="font-semibold mt-4">b) Device & Usage Data</h3>
-        <ul className="list-disc list-inside space-y-1 mt-2 ms-4">
+        <ul className="list-disc list-inside space-y-1 mt-2 ms-4 text-white">
           <li>Device type, operating system, and version</li>
           <li>IP address</li>
           <li>Browser type and version (for web users)</li>
@@ -41,7 +45,7 @@ function PrivacyComponent() {
         <p className="leading-relaxed mt-1">
           Our website may use cookies and similar tracking technologies to:
         </p>
-        <ul className="list-disc list-inside space-y-1 mt-2 ms-4">
+        <ul className="list-disc list-inside space-y-1 mt-2 ms-4 text-white">
           <li>Maintain user sessions</li>
           <li>Analyze user behavior</li>
           <li>Improve website performance</li>
@@ -53,8 +57,13 @@ function PrivacyComponent() {
       </section>
 
       {/* 2. How We Use Your Information */}
-      <section>
-        <h2 className="text-2xl font-bold mb-2">
+      <section
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
+        <h2 className="text-2xl font-bold mb-2 text-white">
           2. How We Use Your Information
         </h2>
         <ul className="list-disc list-inside text-sm space-y-1">
@@ -72,8 +81,13 @@ function PrivacyComponent() {
       </section>
 
       {/* 3. How We Share Your Information */}
-      <section>
-        <h2 className="text-2xl font-bold mb-2">
+      <section
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
+        <h2 className="text-2xl font-bold mb-2 text-white">
           3. How We Share Your Information
         </h2>
         <p className="leading-relaxed">
@@ -81,10 +95,10 @@ function PrivacyComponent() {
           information only as follows:
         </p>
 
-        <h3 className="font-semibold mt-2">
+        <h3 className="font-semibold mt-2 text-white">
           a) With Third-Party Service Providers
         </h3>
-        <ul className="list-disc list-inside space-y-1 mt-2 ms-4">
+        <ul className="list-disc list-inside space-y-1 mt-2 ms-4 text-white">
           <li>Hosting providers</li>
           <li>Analytics platforms (e.g., Google Analytics, Firebase)</li>
           <li>Payment processors (if e-commerce features are used)</li>
@@ -96,7 +110,7 @@ function PrivacyComponent() {
 
         <h3 className="font-semibold mt-4">b) Legal Requirements</h3>
         <p className="leading-relaxed mt-1">We may disclose information:</p>
-        <ul className="list-disc list-inside space-y-1 mt-2 ms-4">
+        <ul className="list-disc list-inside space-y-1 mt-2 ms-4 text-white">
           <li>If required by law, subpoena, or legal process</li>
           <li>To investigate or prevent fraud, abuse, or security threats</li>
           <li>To enforce our Terms and Conditions</li>
@@ -104,12 +118,19 @@ function PrivacyComponent() {
       </section>
 
       {/* 4. Your Data Rights */}
-      <section>
-        <h2 className="text-2xl font-bold mb-2">4. Your Data Rights</h2>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
+        <h2 className="text-2xl font-bold mb-2 text-white">
+          4. Your Data Rights
+        </h2>
         <p className="leading-relaxed">
           Depending on your jurisdiction, you may have the right to:
         </p>
-        <ul className="list-disc list-inside space-y-1 mt-2 ms-4">
+        <ul className="list-disc list-inside space-y-1 mt-2 ms-4 text-white">
           <li>Access the personal information we hold about you</li>
           <li>Correct inaccuracies in your information</li>
           <li>Request deletion of your data</li>
@@ -125,13 +146,20 @@ function PrivacyComponent() {
       </section>
 
       {/* 5. Data Retention */}
-      <section>
-        <h2 className="text-2xl font-bold mb-2">5. Data Retention</h2>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
+        <h2 className="text-2xl font-bold mb-2 text-white">
+          5. Data Retention
+        </h2>
         <p className="leading-relaxed">
           We retain your personal information for as long as your account is
           active or as needed to:
         </p>
-        <ul className="list-disc list-inside space-y-1 mt-2 ms-4">
+        <ul className="list-disc list-inside space-y-1 mt-2 ms-4 text-white">
           <li>Provide services</li>
           <li>Comply with legal obligations</li>
           <li>Resolve disputes</li>
@@ -144,13 +172,20 @@ function PrivacyComponent() {
       </section>
 
       {/* 6. Security Measures */}
-      <section>
-        <h2 className="text-2xl font-bold mb-2">6. Security Measures</h2>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
+        <h2 className="text-2xl font-bold mb-2 text-white">
+          6. Security Measures
+        </h2>
         <p className="leading-relaxed">
           We take appropriate security measures to protect your information,
           including:
         </p>
-        <ul className="list-disc list-inside space-y-1 mt-2 ms-4">
+        <ul className="list-disc list-inside space-y-1 mt-2 ms-4 text-white">
           <li>SSL encryption on all data transfers</li>
           <li>Secure cloud storage with limited access</li>
           <li>Routine monitoring for vulnerabilities</li>
@@ -162,8 +197,15 @@ function PrivacyComponent() {
       </section>
 
       {/* 7. Children's Privacy */}
-      <section>
-        <h2 className="text-2xl font-bold mb-2">7. Children’s Privacy</h2>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
+        <h2 className="text-2xl font-bold mb-2 text-white">
+          7. Children’s Privacy
+        </h2>
         <p className="leading-relaxed">
           Our Service is not intended for children under 13 (or the age of
           digital consent in your region). We do not knowingly collect data from
@@ -172,8 +214,15 @@ function PrivacyComponent() {
       </section>
 
       {/* 8. International Users */}
-      <section>
-        <h2 className="text-2xl font-bold mb-2">8. International Users</h2>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
+        <h2 className="text-2xl font-bold mb-2 text-white">
+          8. International Users
+        </h2>
         <p className="leading-relaxed">
           If you are accessing the Service from outside [Your Country], you
           understand that your data may be transferred to and processed in
@@ -183,8 +232,15 @@ function PrivacyComponent() {
       </section>
 
       {/* 9. Third-Party Links */}
-      <section>
-        <h2 className="text-2xl font-bold mb-2">9. Third-Party Links</h2>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
+        <h2 className="text-2xl font-bold mb-2 text-white">
+          9. Third-Party Links
+        </h2>
         <p className="leading-relaxed">
           Our Service may contain links to third-party websites or services. We
           are not responsible for their privacy practices. Please review their
@@ -193,8 +249,15 @@ function PrivacyComponent() {
       </section>
 
       {/* 10. Changes to This Policy */}
-      <section>
-        <h2 className="text-2xl font-bold mb-2">10. Changes to This Policy</h2>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
+        <h2 className="text-2xl font-bold mb-2 text-white">
+          10. Changes to This Policy
+        </h2>
         <p className="leading-relaxed">
           We may update this Privacy Policy from time to time. When we do, we
           will update the "Effective Date" at the top of this page and notify
@@ -203,8 +266,13 @@ function PrivacyComponent() {
       </section>
 
       {/* 11. Contact Us */}
-      <section>
-        <h2 className="text-2xl font-bold mb-2">11. Contact Us</h2>
+      <section
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
+        <h2 className="text-2xl font-bold mb-2 text-white">11. Contact Us</h2>
         <p className="leading-relaxed">
           If you have any questions about this Privacy Policy or wish to
           exercise your rights, please contact us at:

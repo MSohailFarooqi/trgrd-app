@@ -2,7 +2,7 @@ function ComingSoonComponent() {
   return (
     <div className="flex flex-wrap items-center py-10">
       <div className="w-full md:w-1/2">
-        <h2 className="text-center text-4xl font-bold">
+        <h2 className="text-center text-4xl font-bold px-6">
           Coming Soon -{" "}
           <span className="text-[#96819c] font-normal">Sneak Peak</span>
         </h2>
@@ -13,7 +13,7 @@ function ComingSoonComponent() {
           <span className="text-[#96819c]">6</span>
         </h1>
       </div>
-      <div className="w-full sm:w-1/2 md:w-1/3 pt-10">
+      <div className="w-full md:w-1/2 lg:w-1/3 pt-10 px-8 lg:px-2">
         <div className="block">
           <h3 className="text-2xl font-bold mb-2">
             🌐 Community Reflections Wall

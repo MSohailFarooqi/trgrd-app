@@ -6,7 +6,7 @@ function GrowthComponent() {
   return (
     <>
       <section className="py-20 text-center">
-        <p className="text-3xl italic mb-8 leading-[3rem]">
+        <p className="text-3xl italic mb-8 leading-[3rem] text-white">
           ✨ “Growth is a process. We're honored to be a part of yours.”
         </p>
         <div className="flex flex-col sm:flex-row gap-3 items-center justify-center">
