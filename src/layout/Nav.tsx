@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 function Nav() {
   return (
     <>
-      <ul className="menu menu-horizontal px-1">
+      <ul className="menu menu-horizontal px-1 text-white">
         <li>
           <Link to="/">Home</Link>
         </li>

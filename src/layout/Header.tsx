@@ -48,7 +48,7 @@ const Header = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-8 items-center text-sm">
+        <ul className="hidden md:flex gap-8 items-center text-sm text-white">
           <li>
             <Link
               to="/"
@@ -104,7 +104,7 @@ const Header = () => {
 
       {/* Mobile Dropdown */}
       {menuOpen && (
-        <ul className="md:hidden px-5 pb-4 space-y-2 bg-[#063133] text-sm">
+        <ul className="md:hidden px-5 py-4 space-y-2 bg-[#063133] text-white text-sm">
           <li>
             <Link
               to="/"

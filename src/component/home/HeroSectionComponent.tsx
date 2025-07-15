@@ -8,10 +8,10 @@ function HeroSection() {
     <div className="hero-content flex-col lg:flex-row gap-10">
       <img src={bannerimage} className="w-full max-w-xl animate-pulse" />
       <div className="text-center lg:text-left">
-        <h1 className="sm:text-6xl text-4xl font-bold">
+        <h1 className="sm:text-6xl text-4xl font-bold text-white">
           Feel it. Name it. Transform it.
         </h1>
-        <p className="py-10">
+        <p className="py-10 text-white">
           A self-awareness tool to help you recognize emotional triggers,
           reflect intentionally, and grow toward a better you.
         </p>
